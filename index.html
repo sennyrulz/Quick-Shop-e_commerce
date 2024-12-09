@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-100 m-0 p-0 h-screen">
+
+    <!--NavBar-->
+    <div class="flex items-center shadow-md">
+        <div class="bg-white flex items-center w-full justify-between h-20">
+            <div class="m-4 px-8">
+                <img src="images/logo.png" alt="">
+            </div>
+            <form class="flex items-center px-60">
+                <input type="text" placeholder="search for items" class="bg-gray-100 border border-color-gray-300 px-40 py-2 rounded-full">
+                <img src="images/images-removebg-preview (1).png" style="margin: 0 0 0 -40px;" class="h-5" alt="searchIcon">
+            </form>
+           
+            <div class="m-4 px-10 gap-8 flex">
+                <img src="images/Cart.png" alt="cart">
+                <img src="images/user.png" alt="user">
+            </div>
+        </div>
+    </div>
+
+    <!--Category-->
+    <div>
+        
+        <div class="grid grid-cols-12 flex  mx-16 my-12">
+            <div class="col-span-4 bg-white items-center w-72 justify-between h-11/12 rounded-3xl shadow-lg">
+                <div class="flex flex-col items-left py-3">
+                    <h4 class="font-bold text-xl m-5 flex gap-4">Categories</h4>
+                    <h5 style="margin-top: 5px;" class="font-normal text-sm m-5 flex gap-4"><img src="images/tshirt.png" alt="">Fashion</h5>
+                    <h5 style="margin-top: 5px;" class="font-normal text-sm m-5 flex gap-4"><img src="images/chair.png" alt="">Furniture</h5>
+                    <h5 style="margin-top: 5px;" class="font-normal text-sm m-5 flex gap-4"><img src="images/laptop.png" alt="">Computer</h5>
+                    <h5 style="margin-top: 5px;" class="font-normal text-sm m-5 flex gap-4"><img src="images/leaf.png" alt="">Health & Beauty</h5>
+                    <h5 style="margin-top: 5px;" class="font-normal text-sm m-5 flex gap-4"><img src="images/store-alt.png" alt="">Supermarket</h5>
+                    <h5 style="margin-top: 5px;" class="font-normal text-sm m-5 flex gap-4"><img src="images/tv.png" alt="">Electronics</h5>
+                    <h5 style="margin-top: 5px;" class="font-normal text-sm m-5 flex gap-4"><img src="images/mobile-alt.png" alt="">Phones & Tablets</h5>
+                    <h5 style="margin-top: 5px;" class="font-normal text-sm m-5 flex gap-4"><img src="images/gamepad.png" alt="">Games</h5>
+                </div>
+                
+            </div>
+
+            
+            <!--Banner-->
+            <div class="col-span-8 ">
+                <div id="animation-carousel" class="relative w-full" data-carousel="static">
+                    
+                    <!-- Carousel wrapper -->
+                    <div style="height: 500px;" class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                         
+        
+                            <!-- Item 1 -->
+                            <div style="height: 500px;" class="bg-gray-300 flex items-right rounded-3xl items-end" class=" hidden duration-700 ease-in-out" data-carousel-item>
+                                <div class="px-28 py-40">
+                                    <h1 class="text-black text-5xl font-bold mb-4">Style your Wardrobe</h1>
+                                    <h5 class="w-5/6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumu consequuntur consectetur modi nam doloribus kgkv mcm. </h5>
+
+                                    <button class="bg-red-500 h-10 w-48 font-normal text-white rounded-full mt-4 hover:bg-gray-700">
+                                        <h3>Call to action</h3>
+                                    </button>
+                                </div>
+                                <img style="margin-left: 460px;" src="images/girl-removebg-preview 1.png" class="absolute block h-82 rounded-b-xl" alt="girl-removebg-preview">
+                            </div>
+                            <!-- Item 2 -->
+                            <div style="height: 500px;" class="bg-red-300 flex items-right rounded-3xl items-end" class=" hidden duration-700 ease-in-out" data-carousel-item>
+                                <img style="margin-left: 460px;" src="images/girl-removebg-preview 1.png" class="absolute block h-82 rounded-b-xl" alt="girl-removebg-preview">
+                            </div>
+
+                            
+                            
+                            <!-- Slider controls -->
+                            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-8 mx-8 cursor-pointer group focus:outline-none" data-carousel-prev>
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                
+                                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                    </svg>
+                                    
+                                    <span class="sr-only">Previous</span>
+                                </span>
+                            </button>
+
+                            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-96 mx-96 cursor-pointer group focus:outline-none" data-carousel-next>
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                    </svg>
+                                    <span class="sr-only">Next</span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </div>
+        
+    </div>
+
+    <!--Featured-->
+
+    <div>
+        <div class="grid grid-cols-12 mx-16 my-12 gap-x-12 gap-y-16 h-96">
+
+            <h2 class="font-bold text-3xl w-96">Featured Products</h2>
+                <div class="grid grid-cols-2 h-screen">  
+
+                    <!--Card--> 
+                    <div class="flex flex-col items-center gap-y-8 py-4 bg-white h-96 w-72 rounded-xl">
+                        <img src="images/Rectangle 1.png" alt="">
+                        <h6 class="text-gray-600 text-sm text-red-500">Furniture</h6>
+                        <h3 class="font-bold text-xl">2 Seater Sofa</h3>
+                        <h6 class="text-gray-600 text-sm">$250.00</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
